@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.0">
+	<file name="./src/ESComplexProject.js">
+		<error line="44" severity="warning" message="cyclomatic: 8" source="constructor"/>
+	</file>
+	<file name="./src/index.js">
+	</file>
+	<file name="./src/Plugins.js">
+		<error line="23" severity="info" message="halstead.difficulty: 8.938" source="constructor"/>
+	</file>
+	<file name="./test/fixture/testImportNPMAlias.js">
+	</file>
+	<file name="./test/fixture/testRequireNPMAlias.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/plugin/syntax/AbstractSyntaxLoader.js">
+		<error line="13" severity="info" message="cyclomatic: 4" source="onLoadSyntax"/>
+		<error line="13" severity="info" message="halstead.difficulty: 10.083" source="onLoadSyntax"/>
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/report/AbstractReport.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/report/ClassReport.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/report/HalsteadData.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/report/MethodReport.js">
+		<error line="19" severity="info" message="halstead.difficulty: 9.5" source="constructor"/>
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/report/ModuleReport.js">
+		<error line="26" severity="info" message="halstead.difficulty: 10.44" source="constructor"/>
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/traits/actualize.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/traits/HalsteadArray.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/traits/safeArray.js">
+		<error line="8" severity="info" message="cyclomatic: 4" source="&lt;anonymous&gt;"/>
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/traits/safeName.js">
+		<error line="9" severity="info" message="cyclomatic: 7" source="&lt;anonymous&gt;"/>
+		<error line="9" severity="info" message="halstead.difficulty: 9.188" source="&lt;anonymous&gt;"/>
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/traits/Trait.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/module/traits/TraitHalstead.js">
+		<error line="13" severity="warning" message="cyclomatic: 8" source="constructor"/>
+		<error line="13" severity="info" message="halstead.difficulty: 11.289" source="constructor"/>
+	</file>
+	<file name="typhonjs-escomplex-commons/src/project/result/formats/formatJSON.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/project/result/formats/formatJSONExpanded.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/project/result/formats/formatMarkdown.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/project/result/formats/formatText.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/project/result/formats/formatTextMinimal.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/project/result/formats/formatTextModules.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/project/result/formats/formatXML.js">
+		<error line="70" severity="info" message="halstead.difficulty: 9.625" source="formatModule"/>
+	</file>
+	<file name="typhonjs-escomplex-commons/src/project/result/formats/formatXMLCheckstyle.js">
+		<error line="88" severity="info" message="halstead.difficulty: 8.611" source="formatModule"/>
+	</file>
+	<file name="typhonjs-escomplex-commons/src/project/result/ProjectFormatter.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/project/result/ProjectResult.js">
+		<error line="24" severity="info" message="halstead.difficulty: 9.9" source="constructor"/>
+	</file>
+	<file name="typhonjs-escomplex-commons/src/utils/MathUtil.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/utils/ObjectUtil.js">
+		<error line="38" severity="info" message="cyclomatic: 5" source="_depthTraverse"/>
+		<error line="38" severity="error" message="halstead.difficulty: 21.636" source="_depthTraverse"/>
+	</file>
+	<file name="typhonjs-escomplex-commons/src/utils/StringUtil.js">
+	</file>
+	<file name="typhonjs-escomplex-commons/src/utils/XMLUtil.js">
+	</file>
+	<file name="typhonjs-escomplex-module/src/ESComplexModule.js">
+	</file>
+	<file name="typhonjs-escomplex-module/src/index.js">
+	</file>
+	<file name="typhonjs-escomplex-module/src/Plugins.js">
+		<error line="27" severity="info" message="halstead.difficulty: 10.389" source="constructor"/>
+	</file>
+</checkstyle>
