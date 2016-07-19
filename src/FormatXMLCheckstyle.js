@@ -3,8 +3,15 @@ import TransformFormat  from 'typhonjs-escomplex-commons/src/transform/Transform
 import js2xmlparser     from 'js2xmlparser';
 
 /**
- * Provides a format transform for ESComplex ModuleReport / ProjectResult instances converting them to XML.
+ * Provides a format transform for ESComplex ModuleReport / ProjectResult instances converting them to Checkstyle XML.
  *
+ * The checkstyle XML format outputs error elements for each file / module. This format depends on the output of
+ * `FormatJSONCheckstyle`. The essential implementation below converts various entries in the JSON output to parameters
+ * that are understood by `js2xmlparser` as attribute values when serializing XML to be conformant with the checkstyle
+ * XML format.
+ *
+ * @see http://checkstyle.sourceforge.net/
+ * @see https://github.com/checkstyle/checkstyle
  * @see https://github.com/checkstyle/checkstyle/blob/master/src/main/java/com/puppycrawl/tools/checkstyle/XMLLogger.java
  */
 export default class FormatXMLCheckstyle
@@ -33,7 +40,6 @@ export default class FormatXMLCheckstyle
     */
    formatReport(report, options)
    {
-/*
       const jsonString = TransformFormat.format(report, this._jsonFormatName, options);
 
       const jsonObject = JSON.parse(jsonString);
@@ -66,8 +72,6 @@ export default class FormatXMLCheckstyle
       }
 
       return js2xmlparser('checkstyle', jsonObject);
-*/
-      return '';
    }
 
    /**
