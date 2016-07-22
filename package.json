@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "js2xmlparser": "^1.0.0",
-    "typhonjs-escomplex-commons": "git+https://git@github.com/typhonjs-node-escomplex/typhonjs-escomplex-commons.git"
+    "typhonjs-escomplex-commons": "^0.0.11"
   },
   "devDependencies": {
     "typhonjs-config-eslint": "^0.4.0",
