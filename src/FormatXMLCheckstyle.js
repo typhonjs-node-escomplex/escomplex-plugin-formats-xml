@@ -36,6 +36,8 @@ export default class FormatXMLCheckstyle
     *
     * @param {ModuleReport}   report - A module report.
     *
+    * @param {object}         options - (Optional) One or more optional parameters passed to the formatter.
+    *
     * @returns {string}
     */
    formatReport(report, options)
@@ -79,6 +81,8 @@ export default class FormatXMLCheckstyle
     *
     * @param {ProjectResult}  result - A project result.
     *
+    * @param {object}         options - (Optional) One or more optional parameters passed to the formatter.
+    *
     * @returns {string}
     */
    formatResult(result, options)
@@ -99,10 +103,7 @@ export default class FormatXMLCheckstyle
             // Map any error entries to error attributes.
             if (Array.isArray(entry.error))
             {
-               entry.error = entry.error.map((errorEntry) =>
-               {
-                  return { '@': errorEntry };
-               });
+               entry.error = entry.error.map((errorEntry) => { return { '@': errorEntry }; });
             }
          });
       }
