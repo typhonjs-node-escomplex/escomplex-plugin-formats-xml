@@ -79,4 +79,14 @@ export default class FormatXML
    {
       return this._formatType;
    }
+
+   /**
+    * Returns whether a given ReportType is supported by this format transform.
+    *
+    * @returns {boolean}
+    */
+   isSupported()
+   {
+      return true;
+   }
 }

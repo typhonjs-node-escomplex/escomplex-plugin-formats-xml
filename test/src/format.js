@@ -2,7 +2,7 @@ import fs               from 'fs-extra';
 import { assert }       from 'chai';
 
 import ModuleReport     from 'typhonjs-escomplex-commons/src/module/report/ModuleReport';
-import ProjectResult    from 'typhonjs-escomplex-commons/src/project/result/ProjectResult';
+import ProjectReport    from 'typhonjs-escomplex-commons/src/project/report/ProjectReport';
 import TransformFormat  from 'typhonjs-escomplex-commons/src/transform/TransformFormat';
 
 import FormatXML        from '../../src/FormatXML';
@@ -24,7 +24,7 @@ function runTests()
       {
          suite('forEachExt / formatReport (large-module/report):', () =>
          {
-            const largeModuleJSON = require('typhonjs-escomplex-test-data/files/large-module/report/report');
+            const largeModuleJSON = require('typhonjs-escomplex-test-data/files/large-module/json/module');
 
             const moduleReport = ModuleReport.parse(largeModuleJSON).finalize();
 
@@ -44,9 +44,9 @@ function runTests()
 
          suite('forEachExt / formatResult (large-project/results):', () =>
          {
-            const largeProjectJSON = require('typhonjs-escomplex-test-data/files/large-project/results/results');
+            const largeProjectJSON = require('typhonjs-escomplex-test-data/files/large-project/json/project');
 
-            const projectResult = ProjectResult.parse(largeProjectJSON).finalize();
+            const projectResult = ProjectReport.parse(largeProjectJSON).finalize();
 
             TransformFormat.forEachExt('xml', (format, formatName) =>
             {
@@ -65,9 +65,9 @@ function runTests()
          suite('forEachExt / formatResult (large-project/results-no-reports):', () =>
          {
             const largeProjectJSON = require(
-             'typhonjs-escomplex-test-data/files/large-project/results/results-no-reports');
+             'typhonjs-escomplex-test-data/files/large-project/json/project-no-modules');
 
-            const projectResult = ProjectResult.parse(largeProjectJSON).finalize();
+            const projectResult = ProjectReport.parse(largeProjectJSON).finalize();
 
             TransformFormat.forEachExt('xml', (format, formatName) =>
             {
@@ -117,7 +117,7 @@ function generateFormatData()
 
    const largeProjectJSON = require('typhonjs-escomplex-test-data/files/large-project/results/results');
 
-   const projectResult = ProjectResult.parse(largeProjectJSON).finalize();
+   const projectResult = ProjectReport.parse(largeProjectJSON).finalize();
 
    TransformFormat.forEachExt('xml', (format, formatName) =>
    {
@@ -133,7 +133,7 @@ function generateFormatData()
 
    const largeProjectJSON2 = require('typhonjs-escomplex-test-data/files/large-project/results/results-no-reports');
 
-   const projectResult2 = ProjectResult.parse(largeProjectJSON2).finalize();
+   const projectResult2 = ProjectReport.parse(largeProjectJSON2).finalize();
 
    TransformFormat.forEachExt('xml', (format, formatName) =>
    {
