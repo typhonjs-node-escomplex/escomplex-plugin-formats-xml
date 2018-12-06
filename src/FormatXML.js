@@ -11,8 +11,8 @@ export default class FormatXML
     * Instantiates FormatXML with a given formatName which should start with `xml` and an associated JSON format
     * type name to use to create the intermediate data to be serialized to XML.
     *
-    * @param {string}   formatType -
     * @param {string}   formatName -
+    * @param {string}   formatType -
     * @param {string}   jsonFormatName -
     */
    constructor(formatName, formatType, jsonFormatName)
@@ -26,6 +26,7 @@ export default class FormatXML
     * Formats a module report as a JSON string.
     *
     * @param {ModuleReport}   report - A module report.
+    * @param {object}         options - TransformFormat options.
     *
     * @returns {string}
     */
@@ -40,6 +41,7 @@ export default class FormatXML
     * Formats a project result as XML.
     *
     * @param {ProjectResult}  result - A project result.
+    * @param {object}         options - TransformFormat options.
     *
     * @returns {string}
     */

@@ -20,8 +20,8 @@ export default class FormatXMLCheckstyle
     * Instantiates FormatXML with a given formatName which should start with `xml` and an associated JSON format
     * type name to use to create the intermediate data to be serialized to XML.
     *
-    * @param {string}   formatType -
     * @param {string}   formatName -
+    * @param {string}   formatType -
     * @param {string}   jsonFormatName -
     */
    constructor(formatName, formatType, jsonFormatName)
