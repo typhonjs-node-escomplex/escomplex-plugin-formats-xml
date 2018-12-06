@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.0">
+	<file name="./src/ESComplexProject.js">
+	</file>
+	<file name="./src/index.js">
+	</file>
+	<file name="./src/Plugins.js">
+	</file>
+	<file name="./test/fixture/testImportNPMAlias.js">
+	</file>
+	<file name="./test/fixture/testRequireNPMAlias.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/analyze/AnalyzeError.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/plugin/syntax/AbstractSyntaxLoader.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/report/AbstractReport.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/report/AggregateMethodReport.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/report/averages/HalsteadAverage.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/report/averages/MethodAverage.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/report/averages/ModuleAverage.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/report/ClassReport.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/report/HalsteadData.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/report/MethodReport.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/report/ModuleReport.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/traits/actualize.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/traits/HalsteadArray.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/traits/Trait.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/traits/TraitHalstead.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/module/traits/TraitUtil.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/project/report/ProjectReport.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/json/FormatJSON.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/json/FormatJSONCheckstyle.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/json/FormatJSONMinimal.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/json/FormatJSONModules.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/markdown/FormatMarkdown.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/markdown/FormatMarkdownAdjacency.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/markdown/FormatMarkdownMinimal.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/markdown/FormatMarkdownModules.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/markdown/FormatMarkdownVisibility.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/text/AbstractFormatText.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/text/AbstractTextMatrix.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/text/FormatText.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/text/FormatTextAdjacency.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/text/FormatTextMinimal.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/text/FormatTextModules.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/formats/text/FormatTextVisibility.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/transform/TransformFormat.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/types/ReportType.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/utils/Enum.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/utils/MathUtil.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/utils/ObjectUtil.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-commons/src/utils/StringUtil.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-module/src/ESComplexModule.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-module/src/index.js">
+	</file>
+	<file name="./node_modules/typhonjs-escomplex-module/src/Plugins.js">
+	</file>
+</checkstyle>
