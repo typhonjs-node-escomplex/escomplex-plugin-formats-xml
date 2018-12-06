@@ -5,12 +5,12 @@ import ModuleReport     from 'typhonjs-escomplex-commons/src/module/report/Modul
 import ProjectReport    from 'typhonjs-escomplex-commons/src/project/report/ProjectReport';
 import TransformFormat  from 'typhonjs-escomplex-commons/src/transform/TransformFormat';
 
-import FormatXML        from '../../src/FormatXML';
-
 import                  '../../src';
 
 // Uncomment to generate matching format test data.
+// import FormatXML        from '../../src/FormatXML';
 // generateFormatData();
+
 runTests();
 
 /**
@@ -35,7 +35,7 @@ function runTests()
                   const output = format.formatReport(moduleReport);
 
                   const original = fs.readFileSync(
-                   `./test/fixture/files/large-module/report-${formatName}.${format.extension}`, 'utf8');
+                   `./test/fixture/files/large-module/module-${formatName}.${format.extension}`, 'utf8');
 
                   assert.strictEqual(output, original);
                });
@@ -55,7 +55,7 @@ function runTests()
                   const output = format.formatResult(projectResult);
 
                   const original = fs.readFileSync(
-                   `./test/fixture/files/large-project/result-${formatName}.${format.extension}`, 'utf8');
+                   `./test/fixture/files/large-project/project-${formatName}.${format.extension}`, 'utf8');
 
                   assert.strictEqual(output, original);
                });
@@ -76,7 +76,7 @@ function runTests()
                   const output = format.formatResult(projectResult);
 
                   const original = fs.readFileSync(
-                   `./test/fixture/files/large-project/results-no-reports-${formatName}.${format.extension}`, 'utf8');
+                   `./test/fixture/files/large-project/project-no-modules-${formatName}.${format.extension}`, 'utf8');
 
                   assert.strictEqual(output, original);
                });
@@ -98,7 +98,7 @@ function generateFormatData()
 
    // Generate project result formatted test data.
 
-   const largeModuleJSON = require('typhonjs-escomplex-test-data/files/large-module/report/report');
+   const largeModuleJSON = require('typhonjs-escomplex-test-data/files/large-module/json/module');
 
    const moduleReport = ModuleReport.parse(largeModuleJSON).finalize();
 
@@ -109,13 +109,13 @@ function generateFormatData()
          const output = format.formatReport(moduleReport);
 
          fs.writeFileSync(
-          `./test/fixture/files/large-module/report-${formatName}.${format.extension}`, output, 'utf8');
+          `./test/fixture/files/large-module/module-${formatName}.${format.extension}`, output, 'utf8');
       });
    });
 
    // Generate module report formatted test data.
 
-   const largeProjectJSON = require('typhonjs-escomplex-test-data/files/large-project/results/results');
+   const largeProjectJSON = require('typhonjs-escomplex-test-data/files/large-project/json/project');
 
    const projectResult = ProjectReport.parse(largeProjectJSON).finalize();
 
@@ -126,12 +126,12 @@ function generateFormatData()
          const output = format.formatResult(projectResult);
 
          fs.writeFileSync(
-          `./test/fixture/files/large-project/result-${formatName}.${format.extension}`, output, 'utf8');
+          `./test/fixture/files/large-project/project-${formatName}.${format.extension}`, output, 'utf8');
       });
    });
 
 
-   const largeProjectJSON2 = require('typhonjs-escomplex-test-data/files/large-project/results/results-no-reports');
+   const largeProjectJSON2 = require('typhonjs-escomplex-test-data/files/large-project/json/project-no-modules');
 
    const projectResult2 = ProjectReport.parse(largeProjectJSON2).finalize();
 
@@ -142,7 +142,7 @@ function generateFormatData()
          const output = format.formatResult(projectResult2);
 
          fs.writeFileSync(
-          `./test/fixture/files/large-project/results-no-reports-${formatName}.${format.extension}`, output, 'utf8');
+          `./test/fixture/files/large-project/project-no-modules-${formatName}.${format.extension}`, output, 'utf8');
       });
    });
 }
